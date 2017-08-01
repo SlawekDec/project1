@@ -8,6 +8,5 @@ public class MemyApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MemyApplication.class, args);
-		System.out.println("dsadsa");
 	}
 }
