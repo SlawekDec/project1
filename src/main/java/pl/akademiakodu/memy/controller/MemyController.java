@@ -3,6 +3,7 @@ package pl.akademiakodu.memy.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import pl.akademiakodu.memy.dao.MemDaoImpl;
 
 /**
  * Created by Sławek on 02.08.2017.
@@ -10,13 +11,22 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MemyController {
 
-    @GetMapping("/")
-    public String add(ModelMap modelMap){
-        return "/home";
-    }
+//    @GetMapping("/")
+//    public String add(ModelMap modelMap){
+//        return "/home";
+//    }
 
 
 
+
+    @GetMapping("/all")
+    public String all( ModelMap modelMap) {
+
+        MemDaoImpl memDao = new MemDaoImpl();
+        modelMap.addAttribute("mem", memDao.showAll());
+        System.out.println(memDao.showAll());
+
+        return "home";
 
 
 //    @GetMapping("/1")
@@ -40,9 +50,5 @@ public class MemyController {
 //        return "/categories";
 //    }
 
-
-
-
-
-
-}
+    }
+    }
