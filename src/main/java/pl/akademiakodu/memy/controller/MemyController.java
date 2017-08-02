@@ -11,16 +11,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MemyController {
 
     @GetMapping("/")
-    public String add(ModelMap modelMap){
+    public String add(ModelMap modelMap) {
         return "/home";
     }
 
 
-<<<<<<< HEAD
-=======
-
-
-
+//
 //    @GetMapping("/1")
 //    public String add1(ModelMap modelMap){
 //        return "/gif.details";
@@ -44,8 +40,4 @@ public class MemyController {
 
 
 
-
-
-
->>>>>>> c1210278ea66a2b50117c00a8818a0b8ffd70054
 }
