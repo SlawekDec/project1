@@ -16,4 +16,36 @@ public class MemyController {
     }
 
 
+<<<<<<< HEAD
+=======
+
+
+
+//    @GetMapping("/1")
+//    public String add1(ModelMap modelMap){
+//        return "/gif.details";
+//    }
+//
+//    @GetMapping("/2")
+//    public String add2(ModelMap modelMap){
+//        return "/favorites";
+//    }
+//
+//
+//    @GetMapping("/3")
+//    public String add4(ModelMap modelMap){
+//        return "/category";
+//    }
+//
+//    @GetMapping("/4")
+//    public String add5(ModelMap modelMap){
+//        return "/categories";
+//    }
+
+
+
+
+
+
+>>>>>>> c1210278ea66a2b50117c00a8818a0b8ffd70054
 }
