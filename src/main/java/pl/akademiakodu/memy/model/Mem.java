@@ -6,12 +6,8 @@ package pl.akademiakodu.memy.model;
 public class Mem {
 
     String name;
-    Boolean isTrue;
 
-    public Mem(String name, Boolean isTrue) {
-        this.name = name;
-        this.isTrue = isTrue;
-    }
+    Boolean isFavourite;
 
     public String getName() {
         return name;
@@ -21,11 +17,16 @@ public class Mem {
         this.name = name;
     }
 
-    public Boolean getTrue() {
-        return isTrue;
+    public Boolean getFavourite() {
+        return isFavourite;
     }
 
-    public void setTrue(Boolean aTrue) {
-        isTrue = aTrue;
+    public void setFavourite(Boolean favourite) {
+        isFavourite = favourite;
+    }
+
+    public Mem(String name, Boolean isFavourite) {
+        this.name = name;
+        this.isFavourite = isFavourite;
     }
 }

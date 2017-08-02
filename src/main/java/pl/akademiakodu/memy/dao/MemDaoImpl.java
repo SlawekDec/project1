@@ -35,13 +35,11 @@ public class MemDaoImpl implements MemDao {
     public List<Mem> showFavourite() {
         List<Mem> mems1 = new ArrayList<>();
         for (Mem a : mems){
-            if (a.getTrue()){
+            if (a.getFavourite()){
                 mems1.add(a);
             }
         }
         return mems1;
     }
 }
-
-
 
