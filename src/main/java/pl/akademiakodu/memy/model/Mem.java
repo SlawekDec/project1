@@ -6,6 +6,7 @@ package pl.akademiakodu.memy.model;
 public class Mem {
 
     String name;
+
     Boolean favorite;
 
     public Boolean getFavorite() {
@@ -17,11 +18,11 @@ public class Mem {
     }
 
 
-
     public Mem(String name, Boolean isTrue) {
         this.name = name;
         this.favorite = isTrue;
     }
+
 
     public String getName() {
         return name;

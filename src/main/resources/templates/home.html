@@ -45,8 +45,8 @@
     </div>
     <div class="gifs container">
         <div class="row">
-           <ul>
 
+           <ul>
 
 
                <div class="gifs container">
@@ -54,7 +54,7 @@
                        <div th:each="gif : ${gifs}" class="col s12 l4">
                            <a th:href="@{|/gif/${gif.name}|}">
                                <img th:src="@{|/gifs/${gif.name}.gif|}" />
-                               <!--<a href="#" th:class="(${gif.favorite}? 'un' : '') + 'mark favorite'"></a>-->
+                               <a href="#" th:class="(${gif.favorite}? 'un' : '') + 'mark favorite'"></a>
                            </a>
                        </div>
                    </div>
@@ -68,6 +68,7 @@
                <!--<li><img src="gifs\infinite-andrew.gif"></li>-->
 
            </ul>
+
         </div>
     </div>
 
