@@ -6,11 +6,21 @@ package pl.akademiakodu.memy.model;
 public class Mem {
 
     String name;
-    Boolean isTrue;
+    Boolean favorite;
+
+    public Boolean getFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(Boolean favorite) {
+        this.favorite = favorite;
+    }
+
+
 
     public Mem(String name, Boolean isTrue) {
         this.name = name;
-        this.isTrue = isTrue;
+        this.favorite = isTrue;
     }
 
     public String getName() {
@@ -21,11 +31,5 @@ public class Mem {
         this.name = name;
     }
 
-    public Boolean getTrue() {
-        return isTrue;
-    }
 
-    public void setTrue(Boolean aTrue) {
-        isTrue = aTrue;
-    }
 }
