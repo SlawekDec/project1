@@ -14,7 +14,13 @@ public class MemDaoImpl implements MemDao {
     static List<Mem> mems = new ArrayList<>();
 
     static {
-        mems.add(new Mem("Pierwszy gif", "gifs\\ben-and-mike.gif"));
+        mems.add(new Mem("android-explosion", true));
+        mems.add(new Mem("ben-and-mike", false));
+        mems.add(new Mem("book-dominos", false));
+        mems.add(new Mem("compiler-bot", false));
+        mems.add(new Mem("cowboy-coder", false));
+        mems.add(new Mem("infinite-andrew", true));
+
 
     }
 
@@ -24,8 +30,18 @@ public class MemDaoImpl implements MemDao {
     }
 
 
+
     @Override
     public List<Mem> showFavourite() {
-        return null;
+        List<Mem> mems1 = new ArrayList<>();
+        for (Mem a : mems){
+            if (a.getTrue()){
+                mems1.add(a);
+            }
+        }
+        return mems1;
     }
 }
+
+
+

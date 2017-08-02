@@ -47,16 +47,26 @@
         <div class="row">
            <ul>
 
-               <!--aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
-               <!--<td th:text="${mem.url}">First name</td>-->
-               <!--<td th:text="${person.name}">First name</td>-->
-
-               <!--<li><img th:src="${mem.url}">-->
-
-               <li><img th:src="${mem.url}"></li>
 
 
+               <div class="gifs container">
+                   <div class="row">
+                       <div th:each="gif : ${gifs}" class="col s12 l4">
+                           <a th:href="@{|/gif/${gif.name}|}">
+                               <img th:src="@{|/gifs/${gif.name}.gif|}" />
+                               <!--<a href="#" th:class="(${gif.favorite}? 'un' : '') + 'mark favorite'"></a>-->
+                           </a>
+                       </div>
+                   </div>
+               </div>
 
+               <!--<li><img src="gifs\android-explosion.gif"></li>-->
+               <!--<li><img src="gifs\ben-and-mike.gif"></li>-->
+               <!--<li><img src="gifs\book-dominos.gif"></li>-->
+               <!--<li><img src="gifs\compiler-bot.gif"></li>-->
+               <!--<li><img src="gifs\cowboy-coder.gif"></li>-->
+               <!--<li><img src="gifs\infinite-andrew.gif"></li>-->
+>
            </ul>
         </div>
     </div>

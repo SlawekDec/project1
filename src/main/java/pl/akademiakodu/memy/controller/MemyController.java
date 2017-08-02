@@ -17,27 +17,42 @@ public class MemyController {
 //    }
 
 
-
-
     @GetMapping("/all")
-    public String all( ModelMap modelMap) {
+    public String all(ModelMap modelMap) {
 
         MemDaoImpl memDao = new MemDaoImpl();
-        modelMap.addAttribute("mem", memDao.showAll().get(0));
+        modelMap.addAttribute("gifs", memDao.showAll());
         System.out.println(memDao.showAll());
 
         return "home";
+    }
 
+    @GetMapping("/favourites")
+    public String all1(ModelMap modelMap) {
+
+        MemDaoImpl memDao = new MemDaoImpl();
+        modelMap.addAttribute("gifs", memDao.showFavourite());
+        return "favorites";
+
+    }
+
+//        @GetMapping("/")
+//        public String add1 (ModelMap modelMap){
+//            return "/home";
+//        }
+
+
+//
 
 //    @GetMapping("/1")
 //    public String add1(ModelMap modelMap){
 //        return "/gif.details";
 //    }
 //
-//    @GetMapping("/2")
-//    public String add2(ModelMap modelMap){
-//        return "/favorites";
-//    }
+    @GetMapping("/2")
+    public String add2(ModelMap modelMap){
+        return "/favorites";
+    }
 //
 //
 //    @GetMapping("/3")
@@ -50,5 +65,5 @@ public class MemyController {
 //        return "/categories";
 //    }
 
-    }
+
     }

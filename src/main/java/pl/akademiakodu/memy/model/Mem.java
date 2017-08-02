@@ -6,11 +6,11 @@ package pl.akademiakodu.memy.model;
 public class Mem {
 
     String name;
-    String url;
+    Boolean isTrue;
 
-    public Mem(String name, String url) {
+    public Mem(String name, Boolean isTrue) {
         this.name = name;
-        this.url = url;
+        this.isTrue = isTrue;
     }
 
     public String getName() {
@@ -21,20 +21,11 @@ public class Mem {
         this.name = name;
     }
 
-    public String getUrl() {
-        return url;
+    public Boolean getTrue() {
+        return isTrue;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-
-    @Override
-    public String toString() {
-        return "Mem{" +
-                "name='" + name + '\'' +
-                ", url='" + url + '\'' +
-                '}';
+    public void setTrue(Boolean aTrue) {
+        isTrue = aTrue;
     }
 }
