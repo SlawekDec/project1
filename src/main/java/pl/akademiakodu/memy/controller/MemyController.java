@@ -17,7 +17,7 @@ public class MemyController {
 //    }
 
 
-    @GetMapping("/all")
+    @GetMapping("/")
     public String all(ModelMap modelMap) {
 
         MemDaoImpl memDao = new MemDaoImpl();
