@@ -7,7 +7,22 @@ public class Mem {
 
     String name;
 
-    Boolean isFavourite;
+    Boolean favorite;
+
+    public Boolean getFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(Boolean favorite) {
+        this.favorite = favorite;
+    }
+
+
+    public Mem(String name, Boolean isTrue) {
+        this.name = name;
+        this.favorite = isTrue;
+    }
+
 
     public String getName() {
         return name;
@@ -17,16 +32,5 @@ public class Mem {
         this.name = name;
     }
 
-    public Boolean getFavourite() {
-        return isFavourite;
-    }
 
-    public void setFavourite(Boolean favourite) {
-        isFavourite = favourite;
-    }
-
-    public Mem(String name, Boolean isFavourite) {
-        this.name = name;
-        this.isFavourite = isFavourite;
-    }
 }

@@ -27,12 +27,12 @@ public class MemyController {
         return "home";
     }
 
-    @GetMapping("/favourites")
+    @GetMapping("/favorites")
     public String all1(ModelMap modelMap) {
 
         MemDaoImpl memDao = new MemDaoImpl();
         modelMap.addAttribute("gifs", memDao.showFavourite());
-        return "favorites";
+        return "/favorites";
 
     }
 
@@ -66,4 +66,4 @@ public class MemyController {
 //    }
 
 
-    }
+}
