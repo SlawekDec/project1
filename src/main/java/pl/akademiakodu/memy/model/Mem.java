@@ -17,6 +17,10 @@ public class Mem {
         this.favorite = favorite;
     }
 
+    public Mem() {
+
+    }
+
 
     public Mem(String name, Boolean isTrue) {
         this.name = name;

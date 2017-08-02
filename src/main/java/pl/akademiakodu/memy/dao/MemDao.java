@@ -11,5 +11,6 @@ public interface MemDao {
 
 List<Mem> showAll();
 List<Mem> showFavourite();
+Mem findName(String name);
 
 }

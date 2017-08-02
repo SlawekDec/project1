@@ -48,6 +48,21 @@ public class MemDaoImpl implements MemDao {
 
     }
 
+
+
+    @Override
+    public Mem findName(String name) {
+
+        Mem mem1 = new Mem();
+
+        for (Mem p : mems){
+            if (p.getName() == name){
+                mem1 = p;
+            }
+        }
+        return mem1;
+    }
+
 }
 
 
