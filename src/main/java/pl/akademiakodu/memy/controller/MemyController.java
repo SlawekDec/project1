@@ -23,7 +23,7 @@ public class MemyController {
     public String all( ModelMap modelMap) {
 
         MemDaoImpl memDao = new MemDaoImpl();
-        modelMap.addAttribute("mem", memDao.showAll());
+        modelMap.addAttribute("mem", memDao.showAll().get(0));
         System.out.println(memDao.showAll());
 
         return "home";

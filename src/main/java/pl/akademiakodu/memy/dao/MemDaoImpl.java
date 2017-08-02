@@ -24,7 +24,6 @@ public class MemDaoImpl implements MemDao {
     }
 
 
-
     @Override
     public List<Mem> showFavourite() {
         return null;
