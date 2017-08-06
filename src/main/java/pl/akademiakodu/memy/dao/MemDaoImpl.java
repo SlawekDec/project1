@@ -1,5 +1,9 @@
 package pl.akademiakodu.memy.dao;
 
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import pl.akademiakodu.memy.model.Mem;
 
 import java.util.ArrayList;
@@ -42,16 +46,14 @@ public class MemDaoImpl implements MemDao {
                     mems1.add(a);
                 }
             }
-
         }
         return mems1;
 
     }
 
 
-
     @Override
-    public Mem findName(String name) {
+    public Mem searchName(String name) {
 
         Mem mem1 = new Mem();
 
@@ -62,6 +64,10 @@ public class MemDaoImpl implements MemDao {
         }
         return mem1;
     }
+
+
+
+
 
 }
 
